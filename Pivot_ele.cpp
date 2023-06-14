@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int pivot(int arr[],int n){
+int pivot(int arr[],int n){// arr[i]>arr[i+1]
 	int s=0;
 	int e=n-1;
 	while(s<e){
