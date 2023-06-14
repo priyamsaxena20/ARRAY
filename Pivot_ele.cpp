@@ -24,3 +24,27 @@ int main(){
 	return 0;
 	
 }
+//********************************************//alternate
+
+#include<iostream>
+using namespace std;
+int pivot(int arr[],int n){
+int	lo=0;
+int hi=n-1;
+while(lo<hi){
+int mid=lo+(hi-lo)/2;
+if(arr[mid]<arr[hi]){
+	hi=mid;
+}
+else{
+	lo=mid+1;
+}	
+}
+return arr[lo];//lo
+}
+int main(){
+	int arr[6]={50,60,10,20,30,40};//do se roted
+   cout<<"the pivot elemet index is"<<pivot(arr,6);
+	return 0;
+	
+}
